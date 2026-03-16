@@ -3,6 +3,7 @@ Process Commands:
 2. ps -aux: gives the list of all the active running processes or threads with detail.
 3. ps -p PID: filter out the process corresponding to the given PID.
 4. pgrep <process_name>: find the PID of the given process.
+https://github.com/bisht2311/90DaysOfDevOps/blob/9f6d6c831e78475dba6016ce58da07fe04b352a7/2026/day-04/Screenshot%202026-03-16%20075633.png
 
 System Commands:
 1. systemctl status <service_name>: used to check the current status of a service
