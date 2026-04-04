@@ -28,4 +28,15 @@ pvs
 - `/dev/xvdf , /dev/xvdg and /dev/xvdh` initialized as a physical volume
 - `pvs` shows it ready for LVM
 
-![]()
+![](https://github.com/bisht2311/90DaysOfDevOps/blob/b4ea6442acd000b9b6c53d42bb2860fd3defb355/2026/day-13/Day%2013%20-%20Snapshots/2.0.png)
+
+## Task 3: Create Volume Group
+
+**Command:**
+```bash
+vgcreate devops-vg /dev/xvdf /dev/xvdg
+vgs
+```
+
+**Observation:**
+- Volume group `devops-vg` created with 15G free space
