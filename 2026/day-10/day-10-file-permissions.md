@@ -17,5 +17,4 @@ Linux permissions define who can access or modify files, directly impacting syst
 💡 Takeaway:
 Understanding and managing file permissions is essential for secure system administration and DevOps workflows.
 
-Snapshot:
-![image alt](https://github.com/bisht2311/90DaysOfDevOps/blob/4f35f495106b61fec77a0f0bc938e66cbba20ff1/2026/day-10/snapshots/1.png)
+![](https://github.com/bisht2311/90DaysOfDevOps/blob/4f35f495106b61fec77a0f0bc938e66cbba20ff1/2026/day-10/snapshots/1.png)
