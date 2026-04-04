@@ -83,7 +83,7 @@ df -h
 **Observation:**
 - LV size increased by 2GB
 
-![task6](https://github.com/bisht2311/90DaysOfDevOps/blob/67eb45fd5184008209ddbe3355fb5860716c5904/2026/day-13/Day%2013%20-%20Snapshots/6.0.png)
+![task6]()
 
 
 ## Commands Used
