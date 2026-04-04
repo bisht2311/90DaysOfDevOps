@@ -78,12 +78,11 @@ df -h
 **Commands:**
 ```bash
 lvextend -L +2G /dev/devops-vg/app-data
-df -h
 ```
 **Observation:**
 - LV size increased by 2GB
 
-![task6]()
+![task6](https://github.com/bisht2311/90DaysOfDevOps/blob/cc7abb603369559ba4236f4ea74cd12e3486ef5b/2026/day-13/Day%2013%20-%20Snapshots/6.png)
 
 
 ## Commands Used
@@ -127,7 +126,6 @@ df -h /mnt/app-data                             # Verify mounted filesystem size
 ### 6. Extend Logical Volume
 ```bash
 lvextend -L +2G /dev/devops-vg/app-data       # Extend LV by 2GB
-df -h                                         # Verify updated size and usage
 ```
 
 ## Key Learnings
