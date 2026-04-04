@@ -80,4 +80,74 @@ Using chown you can change both owner and group together:
 ![](https://github.com/bisht2311/90DaysOfDevOps/blob/0bf68f800f54f0014d814acce1b86ccb791a3444/2026/day-11/Day11%20-%20Snapshots/3.png)
 
 - Task 6
-![]()
+![](https://github.com/bisht2311/90DaysOfDevOps/blob/3dfdacfb795d422de4d29fbc603cfc4c83939422/2026/day-11/Day11%20-%20Snapshots/4.png)
+
+## Files & Directories Created
+```bash
+- devops-file.txt
+- team-notes.txt
+- project-config.yaml
+- app-logs/
+- heist-project/
+  - vault/
+    - gold.txt
+  - plans/
+    - strategy.conf
+- bank-heist/
+  - access-codes.txt
+  - blueprints.pdf
+  - escape-plan.txt
+```
+
+## Ownership Changes
+| File/Dir                   | Before    | After                       |
+| -------------------------- | --------- | --------------------------- |
+| devops-file.txt            | user:user | tokyo:tokyo → berlin:berlin |
+| team-notes.txt             | user:user | user:heist-team             |
+| project-config.yaml        | user:user | professor:heist-team        |
+| app-logs/                  | user:user | berlin:heist-team           |
+| heist-project/ (all files) | user:user | professor:planners          |
+| access-codes.txt           | user:user | tokyo:vault-team            |
+| blueprints.pdf             | user:user | berlin:tech-team            |
+| escape-plan.txt            | user:user | nairobi:vault-team          |
+
+
+## Commands Used
+```bash
+touch devops-file.txt
+ls -l
+sudo useradd tokyo
+sudo chown tokyo devops-file.txt
+sudo useradd berlin
+sudo chown berlin devops-file.txt
+touch team-notes.txt
+sudo groupadd heist-team
+sudo chgrp heist-team team-notes.txt
+touch project-config.yaml
+sudo chown professor:heist-team project-config.yaml
+mkdir app-logs
+sudo chown berlin:heist-team app-logs
+mkdir -p heist-project/vault
+mkdir -p heist-project/plans
+touch heist-project/vault/gold.txt
+touch heist-project/plans/strategy.conf
+sudo groupadd planners
+sudo chown -R professor:planners heist-project/
+mkdir bank-heist
+touch bank-heist/access-codes.txt
+touch bank-heist/blueprints.pdf
+touch bank-heist/escape-plan.txt
+sudo useradd nairobi
+sudo groupadd vault-team
+sudo groupadd tech-team
+sudo chown tokyo:vault-team bank-heist/access-codes.txt
+sudo chown berlin:tech-team bank-heist/blueprints.pdf
+sudo chown nairobi:vault-team bank-heist/escape-plan.txt
+ls -lR bank-heist/
+```
+
+## What I Learned
+- **Owner** controls the file, and has specific rights (read/write/execute).
+- **Group** allows multiple users to share permissions.
+- **chgrp** changes group
+- **chown** changes both owner and group in one command.
