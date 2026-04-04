@@ -39,4 +39,19 @@ vgs
 ```
 
 **Observation:**
-- Volume group `devops-vg` created with 15G free space
+- Volume group `devops-vg` created with 22G free space
+
+![](https://github.com/bisht2311/90DaysOfDevOps/blob/ac20b8b1801dd73905f248fd73634a64682c4d25/2026/day-13/Day%2013%20-%20Snapshots/3.0.png)
+
+## Task 4: Create Logical Volume
+
+**Command:**
+```bash
+lvcreate -L 15G -n app-data devops-vg
+lvs
+```
+
+**Observation:**
+- Logical volume `app-data` of 15GB created under `devops-vg`
+
+![task4]()
