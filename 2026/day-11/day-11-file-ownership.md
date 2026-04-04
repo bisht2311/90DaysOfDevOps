@@ -77,7 +77,7 @@ Using chown you can change both owner and group together:
 ![](https://github.com/bisht2311/90DaysOfDevOps/blob/df98c85f4440b19f677197c3ba29aadc4513d1ca/2026/day-11/Day11%20-%20Snapshots/2.png)
 
 - Task 5
-![]()
+![](https://github.com/bisht2311/90DaysOfDevOps/blob/0bf68f800f54f0014d814acce1b86ccb791a3444/2026/day-11/Day11%20-%20Snapshots/3.png)
 
 - Task 6
 ![]()
