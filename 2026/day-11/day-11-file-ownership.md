@@ -22,8 +22,8 @@
 
 1. Create file team-notes.txt
 2. Check current group: ls -l team-notes.txt
-3. Create group: sudo groupadd heist-team
-4. Change file group to heist-team
+3. Create group: sudo groupadd heist-game
+4. Change file group to heist-game
 5. Verify the change
 
 ## Task 4: Combined Owner & Group Change
@@ -31,9 +31,9 @@
 Using chown you can change both owner and group together:
 
 1. Create file project-config.yaml
-2. Change owner to professor AND group to heist-team (one command)
+2. Change owner to professor AND group to heist-game (one command)
 3. Create directory app-logs/
-4. Change its owner to berlin and group to heist-team
+4. Change its owner to berlin and group to heist-game
 
 ## Task 5: Recursive Ownership
 
@@ -74,4 +74,10 @@ Using chown you can change both owner and group together:
 ![](https://github.com/bisht2311/90DaysOfDevOps/blob/87591a067d176dfd3b661162f3a5d7e639ae7103/2026/day-11/Day11%20-%20Snapshots/1.png)
 
 - Task 3 + Task 4
-![()]
+![](https://github.com/bisht2311/90DaysOfDevOps/blob/df98c85f4440b19f677197c3ba29aadc4513d1ca/2026/day-11/Day11%20-%20Snapshots/2.png)
+
+- Task 5
+![]()
+
+- Task 6
+![]()
