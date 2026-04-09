@@ -33,7 +33,69 @@
 - ---
 
 ## Hands-on Checklist 
-- **Identity:** `hostname -I` (or `ip addr show`)
-- Observation: EC2 instance private IP is 172.31.31.198 (internal AWS VPC network).
-  ![hostname]()
-- 
+**Identity:** `hostname -I` (or `ip addr show`)
+- Observation: EC2 instance private IP is 172.31.13.236 (internal AWS).
+  ![hostname](https://github.com/bisht2311/90DaysOfDevOps/blob/3644296892a40b251943cce010ae561eb40ac40a/2026/day-14/Day%2014%20-%20Snapshots/1.png)
+
+**Reachability:** `ping -c 5 google.com`
+- Reachability: google.com (0% packet loss).
+- Observation: Excellent network connectivity with ~2ms latency**
+  ![ping](https://github.com/bisht2311/90DaysOfDevOps/blob/3644296892a40b251943cce010ae561eb40ac40a/2026/day-14/Day%2014%20-%20Snapshots/2.png)
+
+**Path:** `traceroute gogle.com`
+- Obervation: Successfully reached the destonation at hop 7,depspite a block of timeouts (* * *) on hops 2,4 caused by network security filtering.
+  ![](https://github.com/bisht2311/90DaysOfDevOps/blob/3644296892a40b251943cce010ae561eb40ac40a/2026/day-14/Day%2014%20-%20Snapshots/3.png)
+
+**Ports:** `ss -tulpn`
+- Observation: SSH is listening on port 22 (on 0.0.0.0, meaning it accepts outside connections),and the local DNS resolver is listening on port 53 (on 127.0.0.53, for internal system use only)
+  ![tuln](https://github.com/bisht2311/90DaysOfDevOps/blob/3644296892a40b251943cce010ae561eb40ac40a/2026/day-14/Day%2014%20-%20Snapshots/4.png)
+
+**Name resolution:** `dig google.com`
+- Observation: The DNS query successfully resolved google.com
+  ![dig](https://github.com/bisht2311/90DaysOfDevOps/blob/3644296892a40b251943cce010ae561eb40ac40a/2026/day-14/Day%2014%20-%20Snapshots/5.png)
+
+**HTTP check:** `curl -I google.com`
+- Observation: Received HTTP status 301 (Moved Permanently), indicating the server is redirecting the request to google.com/
+  ![tuln](https://github.com/bisht2311/90DaysOfDevOps/blob/3644296892a40b251943cce010ae561eb40ac40a/2026/day-14/Day%2014%20-%20Snapshots/6.png)
+
+**Connections snapshot:** `netstat -an | head` — count ESTABLISHED vs LISTEN (rough).
+- Observation: Captured ESTABLISHED and multiple ports in LISTEN state.
+  ![netstat](https://github.com/bisht2311/90DaysOfDevOps/blob/3644296892a40b251943cce010ae561eb40ac40a/2026/day-14/Day%2014%20-%20Snapshots/7.png)
+
+## Mini Task: Port Probe & Interpret
+- Identify one listening port from `ss -tulpn`
+- From the same machine, test it: `netcat -zv localhost 22`
+  ![port_probe](https://github.com/bisht2311/90DaysOfDevOps/blob/3644296892a40b251943cce010ae561eb40ac40a/2026/day-14/Day%2014%20-%20Snapshots/8.png)
+- If not reachable: Next steps would be checking service status (systemctl status ssh) or firewall rules.
+
+- **If DNS Fails**
+   - OSI: Layer 7 (Application)
+   - TCP-IP: Application layer
+
+  - **Reason:**
+    - DNS is an application-layer protocol
+    - Common issues include resolver misconfiguration,DNS service failure,or invalid records
+    - If unresolved,move to:`Transport layer`
+
+- **If HTTP 500 Shows Up**
+  - OSI: Layer 7 (Application)
+  - TCP-IP: Application layer
+
+  - **Reason:**
+    - TCP connection succeeded
+    - Request reached the server
+    - HTTP 500 indicates a server-side,application error,not a network issue
+
+
+**Two follow-up checks you’d run in a real incident:**
+
+1. DNS Troubleshooting
+```bash
+cat /etc/resolv.conf
+dig google.com
+```
+2. HTTP 500 Troubleshooting
+```bash
+tail -f application.log
+systemctl status <web-service>
+```
