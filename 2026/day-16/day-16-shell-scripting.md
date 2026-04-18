@@ -6,7 +6,7 @@
 3. Print `Hello, DevOps!` using `echo`
 4. Make it executable and run it
 
-   ![](https://github.com/bisht2311/90DaysOfDevOps/blob/a09fcb59e28eb44aa943c2dee4706bb11acb9ffb/2026/day-16/Day%2016%20-%20Snapshots/1.png)
+   ![](https://github.com/bisht2311/90DaysOfDevOps/blob/9d5df217a1e71515187beb92e91f3b043275d2df/2026/day-16/Day%2016%20-%20Snapshots/1.png)
 
 * What happens if you remove the shebang line?
  - The script runs after removing shebang line :
@@ -23,7 +23,7 @@
  * Using double quote `" "` - Allow **variable expansion**
  * Using single quote `' '` - Treat every character exactly as written
 
-   ![variable](https://github.com/bisht2311/90DaysOfDevOps/blob/a09fcb59e28eb44aa943c2dee4706bb11acb9ffb/2026/day-16/Day%2016%20-%20Snapshots/2.png)
+   ![variable](https://github.com/bisht2311/90DaysOfDevOps/blob/9d5df217a1e71515187beb92e91f3b043275d2df/2026/day-16/Day%2016%20-%20Snapshots/2.png)
 
 
 ## Task 3: User Input with read
@@ -32,7 +32,7 @@
    - Asks for their favourite tool
    - Prints: `Hello <name>, your favourite tool is <tool>`
 
-   ![greet](https://github.com/bisht2311/90DaysOfDevOps/blob/a09fcb59e28eb44aa943c2dee4706bb11acb9ffb/2026/day-16/Day%2016%20-%20Snapshots/3.png)
+   ![greet](https://github.com/bisht2311/90DaysOfDevOps/blob/9d5df217a1e71515187beb92e91f3b043275d2df/2026/day-16/Day%2016%20-%20Snapshots/3.png)
 
 
 ## Task 4: If-Else Conditions
@@ -40,14 +40,14 @@
    - Takes a number using `read`
    - Prints whether it is **positive**, **negative**, or **zero**
 
-   ![check_number](https://github.com/bisht2311/90DaysOfDevOps/blob/a09fcb59e28eb44aa943c2dee4706bb11acb9ffb/2026/day-16/Day%2016%20-%20Snapshots/4.png)
+   ![check_number](https://github.com/bisht2311/90DaysOfDevOps/blob/9d5df217a1e71515187beb92e91f3b043275d2df/2026/day-16/Day%2016%20-%20Snapshots/4.1.png)
 
 2. Create `file_check.sh` that:
    - Asks for a filename
    - Checks if the file **exists** using `-f`
    - Prints appropriate message
 
-   ![file_check](https://github.com/bisht2311/90DaysOfDevOps/blob/a09fcb59e28eb44aa943c2dee4706bb11acb9ffb/2026/day-16/Day%2016%20-%20Snapshots/5.png)
+   ![file_check](https://github.com/bisht2311/90DaysOfDevOps/blob/9d5df217a1e71515187beb92e91f3b043275d2df/2026/day-16/Day%2016%20-%20Snapshots/4.2.png)
 
 
 ## Task 5: Combine It All
@@ -57,8 +57,7 @@ Create `server_check.sh` that:
 3. If `y` — runs `systemctl status <service>` and prints whether it's **active** or **not**
 4. If `n` — prints "Skipped."
 
-   ![server_check](https://github.com/bisht2311/90DaysOfDevOps/blob/a09fcb59e28eb44aa943c2dee4706bb11acb9ffb/2026/day-16/Day%2016%20-%20Snapshots/6.png)
-
+   ![server_check](https://github.com/bisht2311/90DaysOfDevOps/blob/9d5df217a1e71515187beb92e91f3b043275d2df/2026/day-16/Day%2016%20-%20Snapshots/5.png)
 
 ## What I learned -
 
