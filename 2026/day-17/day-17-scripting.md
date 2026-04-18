@@ -4,12 +4,14 @@
 1. Create `for_loop.sh` that:
    - Loops through a list of 5 fruits and prints each one
    
-   ![for_loop](https://github.com/bisht2311/90DaysOfDevOps/blob/e1b67e25d41bbdf5bfa063391f719dd4a9f605b9/2026/day-17/Day%2017%20-%20Snapshots/1.2.png)
+   ![for_loop](https://github.com/bisht2311/90DaysOfDevOps/blob/0943c0030c97b322813b78db74a98c73b5b99da1/2026/day-17/Day%2017%20-%20Snapshots/1.1.png
+)
 
 2. Create `count.sh` that:
    - Prints numbers 1 to 10 using a for loop
    
-   ![count](https://github.com/bisht2311/90DaysOfDevOps/blob/e1b67e25d41bbdf5bfa063391f719dd4a9f605b9/2026/day-17/Day%2017%20-%20Snapshots/1.1.png)
+   ![count](https://github.com/bisht2311/90DaysOfDevOps/blob/0943c0030c97b322813b78db74a98c73b5b99da1/2026/day-17/Day%2017%20-%20Snapshots/1.2.png
+)
 
 ---
 
@@ -19,7 +21,7 @@
    - Counts down to 0 using a while loop
    - Prints "Done!" at the end
    
-   ![countdown](https://github.com/bisht2311/90DaysOfDevOps/blob/e1b67e25d41bbdf5bfa063391f719dd4a9f605b9/2026/day-17/Day%2017%20-%20Snapshots/2.png)
+   ![countdown](https://github.com/bisht2311/90DaysOfDevOps/blob/0943c0030c97b322813b78db74a98c73b5b99da1/2026/day-17/Day%2017%20-%20Snapshots/2.png)
    
 ---
 
@@ -29,14 +31,14 @@
    - Prints `Hello, <name>!`
    - If no argument is passed, prints "Usage: ./greet.sh <name>"
    
-   ![greet](https://github.com/bisht2311/90DaysOfDevOps/blob/e1b67e25d41bbdf5bfa063391f719dd4a9f605b9/2026/day-17/Day%2017%20-%20Snapshots/3.1.png)
+   ![greet](https://github.com/bisht2311/90DaysOfDevOps/blob/0943c0030c97b322813b78db74a98c73b5b99da1/2026/day-17/Day%2017%20-%20Snapshots/3.1.png)
 
 2. Create `args_demo.sh` that:
    - Prints total number of arguments (`$#`)
    - Prints all arguments (`$@`)
    - Prints the script name (`$0`)
    
-   ![args_demo](https://github.com/bisht2311/90DaysOfDevOps/blob/e1b67e25d41bbdf5bfa063391f719dd4a9f605b9/2026/day-17/Day%2017%20-%20Snapshots/3.2.png)
+   ![args_demo](https://github.com/bisht2311/90DaysOfDevOps/blob/0943c0030c97b322813b78db74a98c73b5b99da1/2026/day-17/Day%2017%20-%20Snapshots/3.2.png)
 
 ---
 
@@ -48,7 +50,7 @@
    - Installs it if missing, skips if already present
    - Prints status for each package
    
-   ![packages](https://github.com/bisht2311/90DaysOfDevOps/blob/e1b67e25d41bbdf5bfa063391f719dd4a9f605b9/2026/day-17/Day%2017%20-%20Snapshots/4.png)
+   ![packages](https://github.com/bisht2311/90DaysOfDevOps/blob/0943c0030c97b322813b78db74a98c73b5b99da1/2026/day-17/Day%2017%20-%20Snapshots/4.png)
 
 ---
 
@@ -60,7 +62,8 @@ Create `safe_script.sh` that:
    - Creates a file inside
    - Uses `||` operator to print an error if any step fails
    
-   ![safe](https://github.com/bisht2311/90DaysOfDevOps/blob/e1b67e25d41bbdf5bfa063391f719dd4a9f605b9/2026/day-17/Day%2017%20-%20Snapshots/5.png)
+   ![safe](https://github.com/bisht2311/90DaysOfDevOps/blob/0943c0030c97b322813b78db74a98c73b5b99da1/2026/day-17/Day%2017%20-%20Snapshots/5.png
+)
 
 
 ---
