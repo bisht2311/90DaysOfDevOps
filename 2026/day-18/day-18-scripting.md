@@ -6,7 +6,7 @@
    - A function `add` that takes two numbers and prints their sum
    - Call both functions from the script
    
-   ![task1]()
+   ![task1](https://github.com/bisht2311/90DaysOfDevOps/blob/694ad6ab31a4f6e43a9c8e3961458c7db799b1a2/2026/day-18/Day18%20-%20Snapshots/1.png)
 
 ---
 
@@ -16,7 +16,7 @@
    - A function `check_memory` that checks free memory using `free -h`
    - A main section that calls both and prints the results
    
-   ![task2]()
+   ![task2](https://github.com/bisht2311/90DaysOfDevOps/blob/694ad6ab31a4f6e43a9c8e3961458c7db799b1a2/2026/day-18/Day18%20-%20Snapshots/2.png)
 
 ---
 
@@ -31,7 +31,7 @@
 - `set -u` → Exit the script if an undefined (unset) variable is used.
 - `set -o pipefail` → Pipeline fails if any command fails.
    
-   ![task3](images/tak3withoutstrictmode.png)
+   ![task3](https://github.com/bisht2311/90DaysOfDevOps/blob/694ad6ab31a4f6e43a9c8e3961458c7db799b1a2/2026/day-18/Day18%20-%20Snapshots/3.png)
    
    
 ---
@@ -42,7 +42,7 @@
    - Show that `local` variables don't leak outside the function
    - Compare with a function that uses regular variables
    
-   ![task4]()
+   ![task4](https://github.com/bisht2311/90DaysOfDevOps/blob/694ad6ab31a4f6e43a9c8e3961458c7db799b1a2/2026/day-18/Day18%20-%20Snapshots/4.png)
 
 ---
 
@@ -54,17 +54,20 @@ Create `system_info.sh` that uses functions for everything:
 4. A function to print **memory usage**
 5. A function to print **top 5 CPU-consuming processes**
 6. A `main` function that calls all of the above with section headers
-7. Use `set -euo pipefail` at the top
 
    
-   ![task5]()
+   ![task5](https://github.com/bisht2311/90DaysOfDevOps/blob/694ad6ab31a4f6e43a9c8e3961458c7db799b1a2/2026/day-18/Day18%20-%20Snapshots/5.png)
 
 ---
 
 ## What I Learned
 
 **Functions & Modularity** – Learned to create reusable, organized code blocks.This makes scripts cleaner, easier to read, and simpler to maintain.
+
 **System Monitoring Scripts** – Explored fetching system info like memory,disk usage,and CPU processes.Useful for building quick automation for system health checks.
+
 **Error Handling & Safety** – Using `set -euo pipefail` to catch undefined variables,failing commands,and pipeline errors early,making scripts more reliable.
+
 **Variable Scope** – Understood the difference between local and global variables. Local variables stay inside functions, while global variables affect the wider script.
+
 **Practical Automation** – Using a main function to orchestrate tasks helps make scripts modular,maintainable,and automation-friendly.
