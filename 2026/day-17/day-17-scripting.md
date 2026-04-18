@@ -4,12 +4,12 @@
 1. Create `for_loop.sh` that:
    - Loops through a list of 5 fruits and prints each one
    
-   ![for_loop]()
+   ![for_loop](https://github.com/bisht2311/90DaysOfDevOps/blob/e1b67e25d41bbdf5bfa063391f719dd4a9f605b9/2026/day-17/Day%2017%20-%20Snapshots/1.2.png)
 
 2. Create `count.sh` that:
    - Prints numbers 1 to 10 using a for loop
    
-   ![count]()
+   ![count](https://github.com/bisht2311/90DaysOfDevOps/blob/e1b67e25d41bbdf5bfa063391f719dd4a9f605b9/2026/day-17/Day%2017%20-%20Snapshots/1.1.png)
 
 ---
 
@@ -19,7 +19,7 @@
    - Counts down to 0 using a while loop
    - Prints "Done!" at the end
    
-   ![countdown]()
+   ![countdown](https://github.com/bisht2311/90DaysOfDevOps/blob/e1b67e25d41bbdf5bfa063391f719dd4a9f605b9/2026/day-17/Day%2017%20-%20Snapshots/2.png)
    
 ---
 
@@ -29,14 +29,14 @@
    - Prints `Hello, <name>!`
    - If no argument is passed, prints "Usage: ./greet.sh <name>"
    
-   ![greet]()
+   ![greet](https://github.com/bisht2311/90DaysOfDevOps/blob/e1b67e25d41bbdf5bfa063391f719dd4a9f605b9/2026/day-17/Day%2017%20-%20Snapshots/3.1.png)
 
 2. Create `args_demo.sh` that:
    - Prints total number of arguments (`$#`)
    - Prints all arguments (`$@`)
    - Prints the script name (`$0`)
    
-   ![args_demo]()
+   ![args_demo](https://github.com/bisht2311/90DaysOfDevOps/blob/e1b67e25d41bbdf5bfa063391f719dd4a9f605b9/2026/day-17/Day%2017%20-%20Snapshots/3.2.png)
 
 ---
 
@@ -48,24 +48,20 @@
    - Installs it if missing, skips if already present
    - Prints status for each package
    
-   ![packages]()
+   ![packages](https://github.com/bisht2311/90DaysOfDevOps/blob/e1b67e25d41bbdf5bfa063391f719dd4a9f605b9/2026/day-17/Day%2017%20-%20Snapshots/4.png)
 
 ---
 
 ## Task 5: Error Handling
-1. Create `safe_script.sh` that:
+Create `safe_script.sh` that:
    - Uses `set -e` at the top (exit on error)
    - Tries to create a directory `/tmp/devops-test`
    - Tries to navigate into it
    - Creates a file inside
    - Uses `||` operator to print an error if any step fails
    
-   ![safe]()
+   ![safe](https://github.com/bisht2311/90DaysOfDevOps/blob/e1b67e25d41bbdf5bfa063391f719dd4a9f605b9/2026/day-17/Day%2017%20-%20Snapshots/5.png)
 
-
-2. Modify your `install_packages.sh` to check if the script is being run as root — exit with a message if not.
-   
-   ![snapshot]()
 
 ---
 
@@ -79,7 +75,6 @@
 * Took user input using read
 * Automated package installation (nginx, curl, wget)
 * Checked package status using dpkg -s
-* Added root user validation using $EUID
 * Implemented error handling with set -e and ||
 * Created safe scripts to avoid failures and overwrites
 * Issue Faced & Lesson Learned: Used commas in a Bash array, causing the loop to fail, Learned that Bash arrays must be space-separated, not comma-separated
