@@ -2,14 +2,14 @@
 
 ## Task 1: Log Rotation Script
 Create `log_rotate.sh` that:
-1. Takes a log directory as an argument (e.g., `/var/log/myapp`)
+1. Takes a log directory as an argument (e.g., `/var/log/demo_dir`)
 2. Compresses `.log` files older than 7 days using `gzip`
 3. Deletes `.gz` files older than 30 days
 4. Prints how many files were compressed and deleted
 5. Exits with an error if the directory doesn't exist
 
    
-   ![images]()
+   ![images](https://github.com/bisht2311/90DaysOfDevOps/blob/dfd73e6c261522ab10d89534f6588834cca2d864/2026/day-19/day19-snapshot/1.png)
    
 ---
 
@@ -23,7 +23,7 @@ Create `server_backup.sh` that:
 6. Handles errors — exit if source doesn't exist
 
    
-   ![images]()
+   ![images](https://github.com/bisht2311/90DaysOfDevOps/blob/dfd73e6c261522ab10d89534f6588834cca2d864/2026/day-19/day19-snapshot/2.png)
    
 ---
 
@@ -53,8 +53,7 @@ Create `maintenance.sh` that:
 3. Logs all output to `/var/log/maintenance.log` with timestamps
 
    
-   ![images]()
-   
+   ![images](https://github.com/bisht2311/90DaysOfDevOps/blob/dfd73e6c261522ab10d89534f6588834cca2d864/2026/day-19/day19-snapshot/3.png)
    
    
 ---
@@ -63,7 +62,7 @@ Create `maintenance.sh` that:
 
 * Validation: Used if [ ! -d "$dir_path"] to prevent scripts from running on missing paths.
 
-* Arguments: Mastered $1,$2,$# to create dynamic,reusable scripts.
+* Arguments: Mastered arguments($1,$2,$#,$?) usage to create dynamic,reusable scripts.
 
 * Advanced File Handling: find command: Combined -mtime, -exec, and -delete for automated file cleanup.
 
