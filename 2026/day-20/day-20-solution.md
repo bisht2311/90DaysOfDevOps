@@ -9,7 +9,7 @@ Your script should:
 2. Exit with a clear error message if no argument is provided
 3. Exit with a clear error message if the file doesn't exist
    
-   ![images]()
+   ![images](https://github.com/bisht2311/90DaysOfDevOps/blob/50f3772135ac1ba0e7fe3beffb78516db44fbfea/2026/day-20/images/check.png)
 
 
 ---
@@ -19,7 +19,7 @@ Your script should:
 2. Print the total error count to the console
 
    
-   ![images]()
+   ![images](https://github.com/bisht2311/90DaysOfDevOps/blob/50f3772135ac1ba0e7fe3beffb78516db44fbfea/2026/day-20/images/count.png)
 
 ---
 
@@ -28,7 +28,7 @@ Your script should:
 2. Print those lines along with their line number
 
    
-   ![images]()
+   ![images](https://github.com/bisht2311/90DaysOfDevOps/blob/50f3772135ac1ba0e7fe3beffb78516db44fbfea/2026/day-20/images/critical.png)
 
 ---
 
@@ -37,7 +37,7 @@ Your script should:
 2. Identify the **top 5 most common** error messages
 3. Display them with their occurrence count, sorted in descending order
    
-   ![images]()
+   ![images](https://github.com/bisht2311/90DaysOfDevOps/blob/50f3772135ac1ba0e7fe3beffb78516db44fbfea/2026/day-20/images/top_errors.png)
 
 ---
 
@@ -50,6 +50,9 @@ Generate a summary report to a text file named `log_report_<date>.txt` (e.g., `l
 5. Top 5 error messages with their occurrence count
 6. List of critical events with line numbers
 
+   ![images](https://github.com/bisht2311/90DaysOfDevOps/blob/50f3772135ac1ba0e7fe3beffb78516db44fbfea/2026/day-20/images/summary.1.png)
+
+---
 
 ### Task 6 (Optional): Archive Processed Logs
 Add a feature to:
@@ -58,7 +61,7 @@ Add a feature to:
 3. Print a confirmation message
 
    
-   ![images]()
+   ![images](https://github.com/bisht2311/90DaysOfDevOps/blob/50f3772135ac1ba0e7fe3beffb78516db44fbfea/2026/day-20/images/summary.2.png)
 
 
 ---
