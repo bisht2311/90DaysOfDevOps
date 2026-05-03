@@ -266,4 +266,4 @@
 
 ### Task 5: Git Commands Reference Update
 
-https://github.com/srdangat/devops-git-practice/blob/main/git-command.md
+https://github.com/bisht2311/devops-git-practice/blob/main/git-commands.md
