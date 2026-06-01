@@ -43,24 +43,27 @@ Write a `docker-compose.yml` that includes:
 1. Tag your app image
 2. Push it to Docker Hub
 3. Share the Docker Hub link
-4. Write a `README.md` in your project with: [Project README](https://github.com/bisht2311/90DaysOfDevOps/blob/5b18b727bf5307cd7a677551536c950288c64e78/2026/day-36/app/README.md)
+4. Write a `README.md` in your project with: 
    - What the app does
    - How to run it with Docker Compose
    - Any environment variables needed
 
-- Tag & Push
-   ![Tag & Push](https://github.com/bisht2311/90DaysOfDevOps/blob/5b18b727bf5307cd7a677551536c950288c64e78/2026/day-36/images/docker-push.png)
+- [Project README](https://github.com/bisht2311/90DaysOfDevOps/blob/5b18b727bf5307cd7a677551536c950288c64e78/2026/day-36/app/README.md)
+     
+    - Tag & Push
+      ![Tag & Push](https://github.com/bisht2311/90DaysOfDevOps/blob/5b18b727bf5307cd7a677551536c950288c64e78/2026/day-36/images/docker-push.png)
 
-- DockerHub
-   ![DockerHub](https://github.com/bisht2311/90DaysOfDevOps/blob/5b18b727bf5307cd7a677551536c950288c64e78/2026/day-36/images/dockerhub.png)
+    - DockerHub
+      ![DockerHub](https://github.com/bisht2311/90DaysOfDevOps/blob/5b18b727bf5307cd7a677551536c950288c64e78/2026/day-36/images/dockerhub.png)
 ---
 
 ### Task 5: Test the Whole Flow
 1. Remove all local images and containers
 2. Pull from Docker Hub and run using only your compose file
 3. Does it work fresh? If not — fix it until it does
-  - Yes it work fresh
-    - Working App
+   
+   - Yes it work fresh
+     - Working App
     ![Working App](https://github.com/bisht2311/90DaysOfDevOps/blob/5b18b727bf5307cd7a677551536c950288c64e78/2026/day-36/images/app-working.png)
 
 
