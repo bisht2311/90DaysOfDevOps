@@ -84,8 +84,3 @@ Pick **topics** you marked as shaky and redo the hands-on tasks from that day.
 - 10 min: redo one weak area
 
 ---
-
-`#90DaysOfDevOps` `#DevOpsKaJosh` `#TrainWithShubham`
-
-Happy Learning!
-**TrainWithShubham**
