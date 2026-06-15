@@ -74,7 +74,7 @@ When would you use `|` vs `>`?
 3. Intentionally break the indentation — what error do you get?
 4. Fix it and validate again
 
-    ![image]()
+    ![image](https://github.com/bisht2311/90DaysOfDevOps/blob/ee3a09d93e0da18b520c22c6689cebcd8756c6b3/2026/day-38/images/error.png)
 
 **get error**
 
