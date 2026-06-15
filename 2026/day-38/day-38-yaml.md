@@ -81,9 +81,7 @@ When would you use `|` vs `>`?
 - `Implicit keys need to be on a single line at line 1, column 1`
 - `Implicit map keys need to be followed by map values at line 4, column 1`
 
-**Fixed**
-
-    ![image]()
+**Fixed:** By giving proper indentation as specified.
 
 ---
 
