@@ -1,0 +1,15 @@
+#key-value pair
+
+name: Harshit Bisht
+role: DevOps & Cloud Engineeer | TSE
+experience_years: 1.8
+learning: true
+
+tools:
+  - Docker
+  - GitHub Actions
+  - K8s
+  - Terraform
+  - Anisble
+
+hobbies: ["Travelling","Binge Watching"]

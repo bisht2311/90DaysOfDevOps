@@ -1,0 +1,18 @@
+server:
+  name: my-server
+  ip: 10.110.61.33
+  port: 5000
+  startup_script: |
+    sudo apt update
+    sudo apt install -y nginx
+    sudo systemctl start nginx
+
+database:
+  host: my-db-server
+  name: my-db
+  startup_script: >
+    echo "Starting DB" &&
+    echo "Connecting to DB"
+  credentials:
+    user: test
+    password: test@123
