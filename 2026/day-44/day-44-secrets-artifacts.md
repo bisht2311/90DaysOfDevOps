@@ -10,15 +10,15 @@
 
 - GitHub automatically replaces secrets with ***
 
-   ![images](images/task1.png)
+   ![images](https://github.com/bisht2311/90DaysOfDevOps/blob/45060378585216eb86d66acfafe579d118450df3/2026/day-44/image/secrets1.png)
 
-   ![image](images/secrets.png)
+   ![image](https://github.com/bisht2311/90DaysOfDevOps/blob/45060378585216eb86d66acfafe579d118450df3/2026/day-44/image/secrets2.png)
 
 Why should you never print secrets in CI logs?
 - CI logs are public or accessible to many team members.
 - Printing secrets can expose API keys, tokens, or passwords.
 
-   [Secrets](workflows/secrets.yml)
+[Secrets](https://github.com/bisht2311/bisht2311-githubactions_practise/blob/1b0d740953e60cdbe67ffda55ab78bf34e593060/.github/workflows/secrets.yml)
 
 ---
 
@@ -27,12 +27,6 @@ Why should you never print secrets in CI logs?
 2. Use it in a shell command without ever hardcoding it
 3. Add `DOCKER_USERNAME` and `DOCKER_TOKEN` as secrets (you'll need these on Day 45)
 
-   ![image](images/task2.png)
-
-   ![image](images/secrets.png)
-
-   [docker](workflows/docker-secrets.yml)
-
 ---
 
 ### Task 3: Upload Artifacts
@@ -40,10 +34,9 @@ Why should you never print secrets in CI logs?
 2. Use `actions/upload-artifact` to save it
 3. After the workflow runs, download the artifact from the Actions tab
 
-   ![image](images/task3.png)
-
-
-   [upload-artifact](workflows/upload-articat.yml)
+   ![image](https://github.com/bisht2311/90DaysOfDevOps/blob/45060378585216eb86d66acfafe579d118450df3/2026/day-44/image/artifact1.png)
+   
+[Upload-Artifact](https://github.com/bisht2311/bisht2311-githubactions_practise/blob/1b0d740953e60cdbe67ffda55ab78bf34e593060/.github/workflows/artifact.yml)
 
 **Verify:** Can you see and download it from GitHub?
 
@@ -56,11 +49,12 @@ Why should you never print secrets in CI logs?
 1. Job 1: generate a file and upload it as an artifact
 2. Job 2: download the artifact from Job 1 and use it (print its contents)
 
+   ![image](https://github.com/bisht2311/90DaysOfDevOps/blob/45060378585216eb86d66acfafe579d118450df3/2026/day-44/image/artifact2.png)
 
-   ![image](images/task4.png)
+   ![image](https://github.com/bisht2311/90DaysOfDevOps/blob/45060378585216eb86d66acfafe579d118450df3/2026/day-44/image/artifact3.png)
 
 
-   [artifacts](workflows/artifact-btwn-jobs.yml)
+[Atifact](https://github.com/bisht2311/bisht2311-githubactions_practise/blob/1b0d740953e60cdbe67ffda55ab78bf34e593060/.github/workflows/artifact.yml)
 
 
 When would you use artifacts in a real pipeline?
@@ -81,14 +75,12 @@ Take any script from your earlier days (Python or Shell) and run it in CI:
 3. Intentionally break the script — verify the pipeline goes red
 4. Fix it — verify it goes green again
 
+   ![image](https://github.com/bisht2311/90DaysOfDevOps/blob/45060378585216eb86d66acfafe579d118450df3/2026/day-44/image/test-fail.png)
 
-   ![image](images/task5.png)
-
-
-   ![image](images/task5.1.png)
+   ![image](https://github.com/bisht2311/90DaysOfDevOps/blob/45060378585216eb86d66acfafe579d118450df3/2026/day-44/image/test-pass.png)
 
 
-   [Test](workflows/test.yml)
+[Test](https://github.com/bisht2311/bisht2311-githubactions_practise/blob/1b0d740953e60cdbe67ffda55ab78bf34e593060/.github/workflows/python-lint-script.yml)
 
 ---
 
@@ -98,9 +90,11 @@ Take any script from your earlier days (Python or Shell) and run it in CI:
 3. Write in your notes: What is being cached and where is it stored?
 
 
-   ![image](images/task6.png)
+   ![image](https://github.com/bisht2311/90DaysOfDevOps/blob/45060378585216eb86d66acfafe579d118450df3/2026/day-44/image/cache-build.png)
 
-   [cache](workflows/cache.yml)
+   ![image](https://github.com/bisht2311/90DaysOfDevOps/blob/45060378585216eb86d66acfafe579d118450df3/2026/day-44/image/cache-test.png)
+
+[Cache](https://github.com/bisht2311/bisht2311-githubactions_practise/blob/1b0d740953e60cdbe67ffda55ab78bf34e593060/.github/workflows/cache.yml)
 
 
 - What is cached: Python packages downloaded by pip from requirements.txt.
