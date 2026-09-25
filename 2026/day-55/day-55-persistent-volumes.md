@@ -101,7 +101,7 @@ Access modes to know:
 - `Retained PV`: `test-pv`
   - It was manually created and had a Reclaim Policy = Retain, so Kubernetes keeps the PV even after the PVC is deleted to prevent accidental data loss.
 
-![image](https://github.com/bisht2311/90DaysOfDevOps/blob/dab5942fcd2d9dec750036d3943ffecc9c4a7479/2026/day-55/images/task7.png)
+![image](https://github.com/bisht2311/90DaysOfDevOps/blob/b23410d140b3bd6eb5fffd36e52c9b1982b38d79/2026/day-55/images/task7.png)
 
 ---
 ### Key Takeaways
