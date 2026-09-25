@@ -1,0 +1,23 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: busybox-volume
+spec:
+  containers:
+    - name: busybox-volume-container
+      image: busybox:latest
+      ports:
+        - containerPort: 80
+      command:
+        - /bin/sh
+        - -c
+        - |
+          echo "This data is persisted by PV and PVC" > /data/message.txt
+          sleep 3600
+      volumeMounts:
+        - name: pv-pvc-storage
+          mountPath: /data
+  volumes:
+    - name: pv-pvc-storage
+      persistentVolumeClaim:
+        claimName: busybox-pvc
