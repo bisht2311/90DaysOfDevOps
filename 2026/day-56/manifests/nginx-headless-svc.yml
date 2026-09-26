@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: nginx-headless-svc
+  labels:
+    app: nginx-stateful
+spec:
+  clusterIP: None
+  selector:
+    app: nginx-stateful
+  ports:
+    - port: 80
+      targetPort: 80
