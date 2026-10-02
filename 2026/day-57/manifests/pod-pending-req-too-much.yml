@@ -1,0 +1,12 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: pod-pending-req-too-much
+spec:
+  containers:
+    - name: pod-pending-req-too-much-container
+      image: busybox:latest
+      resources:
+        requests:
+          cpu: "100"
+          memory: "128Gi"
