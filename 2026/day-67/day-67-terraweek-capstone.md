@@ -32,6 +32,7 @@ terraform workspace select dev
 terraform workspace select staging
 terraform workspace select prod
 ```
+![image](https://github.com/bisht2311/90DaysOfDevOps/blob/cf1da4c96858f37904ee2af7a43ede4fca5d7a47/2026/day-67/images/task1.png)
 
 Answer:
 - What does `terraform.workspace` return inside a config?
